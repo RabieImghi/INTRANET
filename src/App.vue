@@ -10,7 +10,7 @@
           <span class="mx-2  "><font-awesome-icon class="w-6 h-6 text-custom-icon"  :icon="['fas', 'calendar-days']" /></span>
           <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'dollar-sign']" /></span>
           <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'headset']" /></span>
-          <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'pen-to-square']" /></span>
+          <span class="mx-2 " data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" ><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'pen-to-square']" /></span>
         </div>
       <div class="flex justify-between items-center">
        <div class="flex items-center">
@@ -24,7 +24,6 @@
         <div class="ml-12">
           <span class="text-sm">12:34</span>
         </div>
-
         <button class="ml-12 flex gap-3 items-center px-3 py-1 bg-red-500 text-white rounded">  <font-awesome-icon :icon="['fas', 'arrow-right-from-bracket']" />deconnexion</button>
       </div>
     </header>
@@ -32,13 +31,27 @@
    
      <router-view  />
   </div>
-</template>
+  <AppModal />
 
+</template>
 <script>
 
 
 export default {
  
+
+import AppInterface from './components/componentInterface/AppInterface.vue';
+import AppModal from './components/componentModal/AppModal.vue';
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+onMounted(() => {
+    initFlowbite();
+})
+export default {
+  components: {
+    AppInterface,
+    AppModal,
+  },
   props: {
     msg: String,
   },
