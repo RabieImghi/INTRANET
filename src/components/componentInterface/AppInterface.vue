@@ -38,6 +38,7 @@
 .parent {
   overflow: hidden;
   cursor: pointer;
+  width:500px;
 }
 
 img {
