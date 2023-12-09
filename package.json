@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "intranet",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,11 @@
     "autoprefixer": "^10.4.16",
     "core-js": "^3.8.3",
     "date-fns": "^2.30.0",
+    "docxtemplater": "^3.42.4",
+    "file-saver": "^2.0.5",
     "flowbite": "^2.2.0",
+    "js-file-download": "^0.4.12",
+    "jszip": "^3.10.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5",
     "vue": "^3.2.13",
