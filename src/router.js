@@ -1,9 +1,9 @@
 
-import helloWorld from './components/HelloWorld.vue'
+import AppInterface from './components/componentInterface/AppInterface.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
-  { path: '/', component: helloWorld },
+  { path: '/', component: AppInterface },
 ];
 
 const router = createRouter({
