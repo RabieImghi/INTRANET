@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="flex items-center justify-between p-4 px-8 text-dark shadow-md">
+    <header class="flex items-center justify-between p-4 px-8 text-dark bg-white shadow-md">
       <div class="flex items-center">
         <img src="@/assets/logo.png" alt="Logo" class="w-24 h-12 mr-2">
       
@@ -21,11 +21,11 @@
         </div>
        </div>
 
-        <div class="ml-4">
+        <div class="ml-12">
           <span class="text-sm">12:34</span>
         </div>
 
-        <button class="ml-4 flex gap-3 items-center px-3 py-1 bg-red-500 text-white rounded">  <font-awesome-icon :icon="['fas', 'arrow-right-from-bracket']" />deconnexion</button>
+        <button class="ml-12 flex gap-3 items-center px-3 py-1 bg-red-500 text-white rounded">  <font-awesome-icon :icon="['fas', 'arrow-right-from-bracket']" />deconnexion</button>
       </div>
     </header>
 
@@ -51,6 +51,11 @@ export default {
 </script>
 
 <style scoped>
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+}
 .text-custom-icon {
   color: #243464;
   transition: color 0.3s ease;

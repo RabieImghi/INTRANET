@@ -1,43 +1,82 @@
 <template>
-  <div class="hello">
-    <h1 class="text-sm font-bold">{{ msg }}</h1>
-    <p class="mt-4">
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">vue-cli documentation</a>.
-    </p>
-    <h3 class="mt-8 text-2xl">Installed CLI Plugins</h3>
-    <ul class="list-none">
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener" class="text-teal-500">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener" class="text-teal-500">eslint</a></li>
-    </ul>
-    <h3 class="mt-8 text-2xl">Essential Links</h3>
-    <ul class="list-none">
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener" class="text-teal-500">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener" class="text-teal-500">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">News</a></li>
-    </ul>
-    <h3 class="mt-8 text-2xl">Ecosystem</h3>
-    <ul class="list-none">
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener" class="text-teal-500">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener" class="text-teal-500">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener" class="text-teal-500">awesome-vue</a></li>
-    </ul>
+  <div class="flex mt-4 items-center h-screen flex-col">
+    <div class="flex">
+      <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
+        <img src="@/assets/adm.jpg" alt="Image 1" class="w-full h-full object-cover absolute inset-0 z-10">
+        <div class="overlay-content p-4 text-center relative z-20">
+          <h3 class="mt-2 text-lg text-slate-100 font-bold">DEPARTEMENT ADMINISTRATIVE</h3>
+        </div>
+      </div>
+
+      <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
+        <img src="@/assets/departement.jpeg" alt="Image 2" class="w-full h-full object-cover absolute inset-0 z-10">
+        <div class="overlay-content p-4 text-center relative z-20">
+          <h3 class="mt-2 text-lg text-slate-100 font-bold">DEPARTEMENT PRODUCTION</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex mt-4">
+      <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
+        <img src="@/assets/depqualité.jpg" alt="Image 3" class="w-full h-full object-cover absolute inset-0 z-10">
+        <div class="overlay-content p-4 text-center relative z-20">
+          <h3 class="mt-2 text-lg text-slate-100 font-bold">DEPARTEMENT TECHNIQUE</h3>
+        </div>
+      </div>
+
+      <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
+        <img src="@/assets/deprtech.jpg" alt="Image 4" class="w-full h-full object-cover absolute inset-0 z-10">
+        <div class="overlay-content p-4 text-center relative z-20">
+          <h3 class="mt-2 text-lg text-slate-100 font-bold">DEPARTEMENT QUALITE</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'AppInterface',
-  props: {
-    msg: String
-  }
-}
-</script>
-
 <style scoped>
+.parent {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+img {
+  transition: 0.3s ease;
+}
+
+.hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:.7;
+  background-color: #243464;
+  z-index: 15;
+}
+.overlay1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity:.7;
+  background-color: #cc1c24;
+  z-index: 15;
+}
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
 </style>
