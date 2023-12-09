@@ -6,8 +6,8 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faArrowRightFromBracket, faCalendar, faCalendarDays , faDollarSign , faHeadset ,faPenToSquare} from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faCalendar, faCalendarDays , faDollarSign , faHeadset ,faPenToSquare,faUpload,faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
-library.add(faArrowRightFromBracket , faCalendar, faCalendarDays , faDollarSign , faHeadset, faPenToSquare);
+library.add(faArrowRightFromBracket , faCalendar, faCalendarDays , faDollarSign , faHeadset, faPenToSquare,faUpload,faPaperPlane);
 
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')
