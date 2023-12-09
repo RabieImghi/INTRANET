@@ -9,7 +9,7 @@
         <div class="flex">  
           <span class="mx-2  "><font-awesome-icon class="w-6 h-6 text-custom-icon"  :icon="['fas', 'calendar-days']" /></span>
           <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'dollar-sign']" /></span>
-          <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'headset']" /></span>
+          <span class="mx-2 " data-modal-target="extralarge-modal-contact" data-modal-toggle="extralarge-modal-contact"><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'headset']" /></span>
           <span class="mx-2 " data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" ><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'pen-to-square']" /></span>
         </div>
       <div class="flex justify-between items-center">
@@ -32,31 +32,32 @@
      <router-view  />
   </div>
   <AppModal />
+  <AppContactModal />
 
 </template>
 <script>
 
-
-export default {
- 
-
-import AppInterface from './components/componentInterface/AppInterface.vue';
 import AppModal from './components/componentModal/AppModal.vue';
+import AppContactModal from './components/componentModal/AppContactModal.vue';
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
-onMounted(() => {
-    initFlowbite();
-})
+
 export default {
   components: {
-    AppInterface,
     AppModal,
+    AppContactModal,
   },
   props: {
     msg: String,
   },
+  setup() {
+    onMounted(() => {
+      initFlowbite();
+    });
+  },
 };
 </script>
+
 
 <style scoped>
 header{
