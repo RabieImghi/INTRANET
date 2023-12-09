@@ -1,6 +1,7 @@
 <template>
   <div class="flex mt-4 items-center  flex-col">
-    <div class="flex">
+  <h3 class="text-2xl font-extrabold"><span class="first">   INTRANET </span><span class="second"> GTHCONSULT </span></h3>
+    <div class="flex mt-4">
       <a href="/Administrativ">
         <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
           <img src="@/assets/adm.jpg" alt="Image 1" class="w-full h-full object-cover absolute inset-0 z-10">
@@ -9,7 +10,7 @@
           </div>
         </div>
       </a>
-      <a href="/Administrativ">
+      <a href="/Production">
       <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/departement.jpeg" alt="Image 2" class="w-full h-full object-cover absolute inset-0 z-10">
         <div class="overlay-content p-4 text-center relative z-20">
@@ -20,7 +21,7 @@
     </div>
 
     <div class="flex mt-4">
-    <a href="/Administrativ">
+    <a href="/Technique">
       <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/depqualité.jpg" alt="Image 3" class="w-full h-full object-cover absolute inset-0 z-10">
         <div class="overlay-content p-4 text-center relative z-20">
@@ -28,7 +29,7 @@
         </div>
       </div>
     </a>
-      <a href="/AnotherPage">
+      <a href="/Quality">
         <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
           <img src="@/assets/deprtech.jpg" alt="Image 4" class="w-full h-full object-cover absolute inset-0 z-10">
           <div class="overlay-content p-4 text-center relative z-20">
@@ -89,5 +90,11 @@ img {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.first{
+    color:#cc1c24;
+}
+.second{
+    color:#243464;
 }
 </style>
