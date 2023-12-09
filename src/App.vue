@@ -10,7 +10,7 @@
           <span class="mx-2  "><font-awesome-icon class="w-6 h-6 text-custom-icon"  :icon="['fas', 'calendar-days']" /></span>
           <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'dollar-sign']" /></span>
           <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'headset']" /></span>
-          <span class="mx-2 " data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" ><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'pen-to-square']" /></span>
+          <span class="mx-2 " data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" ><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'pen-to-square']" /></span>
         </div>
       <div class="flex justify-between items-center">
        <div class="flex items-center">
