@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mt-4 items-center h-screen flex-col">
+  <div class="flex mt-4 items-center  flex-col">
     <div class="flex">
       <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/adm.jpg" alt="Image 1" class="w-full h-full object-cover absolute inset-0 z-10">
@@ -38,7 +38,11 @@
 .parent {
   overflow: hidden;
   cursor: pointer;
-  width:500px;
+  width: 500px;
+}
+
+body {
+  overflow: hidden;
 }
 
 img {
@@ -56,10 +60,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity:.7;
+  opacity: 0.7;
   background-color: #243464;
   z-index: 15;
 }
+
 .overlay1::before {
   content: '';
   position: absolute;
@@ -67,10 +72,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity:.7;
+  opacity: 0.7;
   background-color: #cc1c24;
   z-index: 15;
 }
+
 .overlay-content {
   display: flex;
   flex-direction: column;
@@ -78,6 +84,4 @@ img {
   align-items: center;
   height: 100%;
 }
-
-
 </style>
