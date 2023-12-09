@@ -126,7 +126,7 @@ export default {
 </script>
 <style>
 .DEMANDE_ABSENCE_SCROOL{
-    height: 50vh !important;
+    max-height: 45vh !important;
     overflow-y : scroll;
 }
 .DEMANDE_ABSENCE_SCROOL::-webkit-scrollbar {

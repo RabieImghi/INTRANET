@@ -36,7 +36,6 @@
 
 </template>
 <script>
-
 import AppModal from './components/componentModal/AppModal.vue';
 import AppContactModal from './components/componentModal/AppContactModal.vue';
 import { onMounted } from 'vue'
