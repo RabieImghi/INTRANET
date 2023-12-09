@@ -30,20 +30,15 @@
     </header>
 
    
-    <div class="p-4">
-      
-      <AppInterface :msg="msg" />
-    </div>
+     <router-view  />
   </div>
 </template>
 
 <script>
-import AppInterface from './components/componentInterface/AppInterface.vue';
+
 
 export default {
-  components: {
-    AppInterface,
-  },
+ 
   props: {
     msg: String,
   },
