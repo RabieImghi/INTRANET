@@ -2,12 +2,14 @@
   <div class="flex mt-8 items-center flex-col">
   <h3 class="text-2xl font-extrabold"><span class="first">  DEPARTEMENT</span><span class="second"> ADMINISTRATIVE </span></h3>
     <div class="flex mt-4">
+    <a href="GestionDesAffaire">
       <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/Gestion des Affaires.jpg" alt="Image 1" class="w-full h-full object-cover absolute inset-0 z-10">
         <div class="overlay-content p-4 text-center relative z-20">
           <h3 class="mt-2 text-lg text-slate-100 font-extrabold">Gestion des Affaires</h3>
         </div>
       </div>
+    </a>
 
       <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/Comptabilité Facturation.jpg" alt="Image 2" class="w-full h-full object-cover absolute inset-0 z-10">

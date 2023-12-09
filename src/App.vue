@@ -29,7 +29,7 @@
     </header>
 
    
-     <router-view  />
+     <router-view />
   </div>
   <AppModal />
 
@@ -62,7 +62,7 @@ header{
   position:sticky;
   top:0;
   z-index:100;
-}
+} 
 .text-custom-icon {
   color: #243464;
   transition: color 0.3s ease;
