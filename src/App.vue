@@ -29,15 +29,17 @@
     </header>
 
    
-    <div class="p-4">
-      
-      <AppInterface :msg="msg" />
-    </div>
+     <router-view  />
   </div>
   <AppModal />
 
 </template>
 <script>
+
+
+export default {
+ 
+
 import AppInterface from './components/componentInterface/AppInterface.vue';
 import AppModal from './components/componentModal/AppModal.vue';
 import { onMounted } from 'vue'
