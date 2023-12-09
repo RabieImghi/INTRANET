@@ -1,4 +1,4 @@
-# my-vue-website
+# portfolio
 
 ## Project setup
 ```
