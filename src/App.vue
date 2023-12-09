@@ -7,7 +7,7 @@
       </div>
 
         <div class="flex">  
-          <span class="mx-2  "><font-awesome-icon class="w-6 h-6 text-custom-icon"  :icon="['fas', 'calendar-days']" /></span>
+          <a href="/Agenda"><span class="mx-2  "><font-awesome-icon class="w-6 h-6 text-custom-icon"  :icon="['fas', 'calendar-days']" /></span></a>
           <span class="mx-2 "><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'dollar-sign']" /></span>
           <span class="mx-2 " data-modal-target="extralarge-modal-contact" data-modal-toggle="extralarge-modal-contact"><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'headset']" /></span>
           <span class="mx-2 " data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal" ><font-awesome-icon  class="w-6 h-6 text-custom-icon" :icon="['fas', 'pen-to-square']" /></span>

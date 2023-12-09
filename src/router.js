@@ -6,6 +6,7 @@ import AppTech from './components/componentTechnique/AppTechnique.vue';
 import AppQuality from './components/componentQuality/AppQuality.vue';
 import AppGestionAffaire from './views/AppGestionAffaire.vue';
 import { createRouter, createWebHistory } from 'vue-router';
+import AppAgenda from './components/componentAgenda/AppAgenda.vue';
 
 const routes = [
   { path: '/', component: AppInterface },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/Production', component: AppProduction },
   { path: '/Technique', component: AppTech },
   { path: '/Quality', component: AppQuality },
+  { path: '/Agenda', component: AppAgenda },
   { path: '/GestionDesAffaire', component: AppGestionAffaire },
  
   

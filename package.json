@@ -13,6 +13,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.5",
     "autoprefixer": "^10.4.16",
     "core-js": "^3.8.3",
+    "date-fns": "^2.30.0",
     "docxtemplater": "^3.42.4",
     "file-saver": "^2.0.5",
     "flowbite": "^2.2.0",
