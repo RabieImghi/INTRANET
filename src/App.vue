@@ -36,27 +36,26 @@
 </template>
 <script>
 
-
-export default {
- 
-
-import AppInterface from './components/componentInterface/AppInterface.vue';
 import AppModal from './components/componentModal/AppModal.vue';
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
-onMounted(() => {
-    initFlowbite();
-})
+
 export default {
   components: {
-    AppInterface,
+   
     AppModal,
   },
   props: {
     msg: String,
   },
+  setup() {
+    onMounted(() => {
+      initFlowbite();
+    });
+  },
 };
 </script>
+
 
 <style scoped>
 header{
