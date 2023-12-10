@@ -5,18 +5,18 @@
     </div>
 
     <div class="content mt-6">
-    <AppClient />
+      <router-view />
     </div>
   </div>
 </template>
 
 <script>
 import AppAside from '../components/componentAffaire/AppAside.vue';
-import AppClient from '../components/componentAffaire/AppClient.vue';
+
 export default {
   components: {
     AppAside,
-    AppClient,
+    
   },
 };
 </script>

@@ -5,6 +5,9 @@ import AppProduction from './components/componentProduction/AppProduction.vue';
 import AppTech from './components/componentTechnique/AppTechnique.vue';
 import AppQuality from './components/componentQuality/AppQuality.vue';
 import AppGestionAffaire from './views/AppGestionAffaire.vue';
+import AppClient from './components/componentAffaire/AppClient.vue';
+import AppInterlocuteur from './components/componentAffaire/AppInterlocuteur.vue';
+
 import { createRouter, createWebHistory } from 'vue-router';
 import AppAgenda from './components/componentAgenda/AppAgenda.vue';
 
@@ -15,8 +18,14 @@ const routes = [
   { path: '/Technique', component: AppTech },
   { path: '/Quality', component: AppQuality },
   { path: '/Agenda', component: AppAgenda },
-  { path: '/GestionDesAffaire', component: AppGestionAffaire },
- 
+  {
+    path: '/GestionDesAffaire',
+    component: AppGestionAffaire,
+    children: [
+      { path: 'client', component: AppClient },
+      { path: 'interlocuteur', component: AppInterlocuteur },
+    ],
+  },
   
 ];
 

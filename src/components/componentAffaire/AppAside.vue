@@ -2,9 +2,9 @@
   <div class="aside">
     <div class="menu" >
       <ul>
-        <li><router-link to="/client">Client</router-link></li>
-        <li><router-link to="/interlocuteur">Interlocuteur</router-link></li>
-        <li><router-link to="/offres-commerciales">Les offres commerciales</router-link></li>
+        <li><router-link to="client">Client</router-link></li>
+        <li><router-link to="interlocuteur">Interlocuteur</router-link></li>
+        <li><router-link to="GestionDesAffaire/offres-commerciales">Les offres commerciales</router-link></li>
       </ul>
     </div>
   </div>
@@ -30,8 +30,8 @@
   }
 
   li {
-    margin-bottom: 10px; 
-    padding:10px;
+    margin-bottom: 15px; 
+    padding:5px;
     border-radius:5px;
     transition:  0.3s ease; 
   }
