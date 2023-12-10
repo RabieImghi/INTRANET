@@ -7,6 +7,7 @@ import AppQuality from './components/componentQuality/AppQuality.vue';
 import AppGestionAffaire from './views/AppGestionAffaire.vue';
 import AppClient from './components/componentAffaire/AppClient.vue';
 import AppInterlocuteur from './components/componentAffaire/AppInterlocuteur.vue';
+import AppOfferCommercial from './components/componentAffaire/AppOfferCommercial.vue';
 
 import { createRouter, createWebHistory } from 'vue-router';
 import AppAgenda from './components/componentAgenda/AppAgenda.vue';
@@ -24,6 +25,7 @@ const routes = [
     children: [
       { path: 'client', component: AppClient },
       { path: 'interlocuteur', component: AppInterlocuteur },
+      { path: 'offresCommerciales', component: AppOfferCommercial },
     ],
   },
   

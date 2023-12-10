@@ -4,7 +4,7 @@
       <ul>
         <li><router-link to="client">Client</router-link></li>
         <li><router-link to="interlocuteur">Interlocuteur</router-link></li>
-        <li><router-link to="GestionDesAffaire/offres-commerciales">Les offres commerciales</router-link></li>
+        <li><router-link to="offresCommerciales">Les offres commerciales</router-link></li>
       </ul>
     </div>
   </div>
