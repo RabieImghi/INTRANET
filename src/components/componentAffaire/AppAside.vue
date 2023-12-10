@@ -2,9 +2,9 @@
   <div class="aside">
     <div class="menu" >
       <ul>
-        <li><router-link to="/client">Client</router-link></li>
-        <li><router-link to="/interlocuteur">Interlocuteur</router-link></li>
-        <li><router-link to="/offres-commerciales">Les offres commerciales</router-link></li>
+        <li><router-link to="client">Client</router-link></li>
+        <li><router-link to="interlocuteur">Interlocuteur</router-link></li>
+        <li><router-link to="GestionDesAffaire/offres-commerciales">Les offres commerciales</router-link></li>
       </ul>
     </div>
   </div>
