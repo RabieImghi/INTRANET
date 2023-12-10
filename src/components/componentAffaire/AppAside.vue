@@ -30,8 +30,8 @@
   }
 
   li {
-    margin-bottom: 10px; 
-    padding:10px;
+    margin-bottom: 15px; 
+    padding:5px;
     border-radius:5px;
     transition:  0.3s ease; 
   }
