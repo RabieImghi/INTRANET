@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="containerr">
     <div class="flex items-center justify-between mb-4">
       <div>
         <button  data-te-toggle="modal"
@@ -339,8 +339,8 @@ export default {
 </script>
 
 <style scoped>
-table{
-    min-width:1100px;
+.containerr{
+  max-width:95%;
 }
 table tr {
   border-bottom: 1px solid #e2e8f0;

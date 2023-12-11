@@ -4,7 +4,8 @@
       <AppAside />
     </div>
 
-    <div class="content mt-6">
+    <div class="content mt-6 w-4/5">
+    
       <router-view />
     </div>
   </div>

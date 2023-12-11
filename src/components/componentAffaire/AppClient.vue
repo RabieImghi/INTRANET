@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="containerr">
     <div class="flex items-center justify-between mb-4">
       <div>
         <button  data-te-toggle="modal"
@@ -155,7 +155,7 @@
       </div>
     </div>
 
-    <div class="overflow-x-auto shadow-md">
+    <div class="overflow-x-auto shadow-md container">
       <table class="w-full table-auto">
         <thead>
           <tr>
@@ -226,10 +226,10 @@ export default {
           raisonSociale: "Client 1",
           referenceClient: "REF001",
           email: "soufiane@gmail.com",
-          telephone: "123-456-7890",
-          adresse: "123 Main St",
-          ville: "City 1",
-          pays: "Country 1",
+          telephone: "06666666",
+          adresse: "aoufous",
+          ville: "errchidia",
+          pays: "maroc",
           ice: "ICE001",
           selected: false, 
         },
@@ -238,8 +238,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -250,8 +250,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -262,8 +262,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -274,8 +274,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -286,8 +286,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -298,8 +298,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -310,8 +310,8 @@ export default {
           raisonSociale: "Client 2",
           referenceClient: "REF002",
           email: "soufiane@gmail.com",
-          telephone: "987-654-3210",
-          adresse: "456 Oak St",
+          telephone: "06666666",
+          adresse: "aoufous",
           ville: "errachidia",
           pays: "maroc",
           ice: "ICE002",
@@ -361,8 +361,8 @@ export default {
 </script>
 
 <style scoped>
-table{
-  min-width:1100px;
+.containerr{
+  max-width:95%;
 }
 table tr {
   border-bottom: 1px solid #e2e8f0;
