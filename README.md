@@ -1,4 +1,4 @@
-# portfolio
+# intranet
 
 ## Project setup
 ```
