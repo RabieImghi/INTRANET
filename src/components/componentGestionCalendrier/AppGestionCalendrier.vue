@@ -360,7 +360,6 @@
       const currentYear = currentDate.getFullYear();
       this.selectedMonth = currentMonth;
       this.selectedYear = currentYear;
-      this.uniqueId = setInterval(this.myFunction, 1);
     },
   };
   </script>

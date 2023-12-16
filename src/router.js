@@ -23,6 +23,11 @@ import AppAgenda from './components/componentAgenda/AppAgenda.vue';
 import AppContact from './components/componentContact/AppContact.vue';
 import AppDemandAbs from './components/componentDemandAbcense/AppDemandAbcense.vue';
 
+
+import GestionRh from './views/AppGestionRh.vue';
+import AppDemandeAbsence from './components/componentGestionRh/AppDemandeAbsence.vue';
+import AppListeDemandeAbsence from './components/componentGestionRh/ListeDemandeAbsence.vue';
+
 import AppGestionCalendrier from './components/componentGestionCalendrier/AppGestionCalendrier.vue';
 const routes = [
   { path: '/', component: AppInterface },
@@ -57,7 +62,15 @@ const routes = [
     ],
   },
   { path: '/GestionCalendrier', component: AppGestionCalendrier },
-  
+  {
+    path: '/GestionRh',
+    component: GestionRh,
+    children: [
+      { path: 'DemandeAbsence', component: AppDemandeAbsence },
+      { path: 'ListeDemandeAbsence', component: AppListeDemandeAbsence },
+
+    ],
+  },
 ];
 
 
