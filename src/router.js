@@ -9,8 +9,11 @@ import AppClient from './components/componentAffaire/AppClient.vue';
 import AppInterlocuteur from './components/componentAffaire/AppInterlocuteur.vue';
 import AppOfferCommercial from './components/componentAffaire/AppOfferCommercial.vue';
 import AppFacture from './views/AppFacture.vue';
+
 import AppAttentFacture from './components/componentFacturation/AppAttentFacture.vue';
 import AppEmiseFacture from './components/componentFacturation/AppEmiseFacture.vue';
+import AppFactureEncaiss from './components/componentFacturation/AppFactureEncaiss.vue';
+
 import ajouterClient from './components/componentAffaire/AppAddClient.vue';
 import ajouterInterlocuteur from './components/componentAffaire/AppAddInterlocuteur.vue';
 import AppAddOffer from './components/componentAffaire/AppAddOffer.vue';
@@ -43,7 +46,8 @@ const routes = [
     children: [
       { path: 'EnAttenteFActuration', component: AppAttentFacture },
       { path: 'EmiseFacture', component: AppEmiseFacture },
-    
+      { path: 'FactureEncaissee', component: AppFactureEncaiss },
+      
     ],
   },
   

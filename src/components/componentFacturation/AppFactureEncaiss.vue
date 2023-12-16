@@ -1,11 +1,10 @@
 <template>
   <div class="containerr">
-   
+    
 
     <div class="overflow-x-auto shadow-md container p-4">
-     <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center justify-between mb-4">
       <div class="flex items-center">
-       
         <input type="text" v-model="searchQuery" placeholder="Search" class="ml-2 p-2 border border-gray-300 rounded focus:outline-none focus:shadow-outline">
       </div>
     </div>
@@ -19,7 +18,6 @@
             <th class="px-4 py-2">Raison sociale</th>
             <th class="px-4 py-2">Mission</th>
             <th class="px-4 py-2">Status</th>
-            <th class="px-4 py-2">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -32,12 +30,7 @@
             <td class="px-4 py-2">{{ invoice.clientRef }}</td>
             <td class="px-4 py-2">{{ invoice.raisonSociale }}</td>
             <td class="px-4 py-2">{{ invoice.mission }}</td>
-           
             <td class="px-4 py-2">{{ invoice.status }}</td>
-             <td class="px-4 flex gap-2 py-2">
-              <button class="bg-blue-500 text-white px-2 py-1 rounded focus:outline-none focus:shadow-outline"><font-awesome-icon :icon="['fas', 'pen-nib']" /></button>
-              <button class="bg-red-500 text-white px-2 py-1 rounded focus:outline-none focus:shadow-outline"><font-awesome-icon :icon="['fas', 'trash']" /></button>
-            </td>
           </tr>
         </tbody>
       </table>
@@ -69,65 +62,69 @@
 export default {
   data() {
     return {
-      invoices: [
-        {
-          id: 1,
-          date: "2023-01-01",
-          invoiceNumber: "INV001",
-          clientRef: "REF001",
-          raisonSociale: "soufiane",
-          mission: "Mission 1",
-          selected: false,
-          status: "En attente facturation",
-        },
-         {
-          id: 2,
-          date: "2023-02-02",
-          invoiceNumber: "INVv01",
-          clientRef: "REF001",
-          raisonSociale: "boushaba",
-          mission: "Mission 2",
-          selected: false,
-          status: "En attente facturation",
-        }, {
-          id: 3,
-          date: "2023-02-02",
-          invoiceNumber: "INVv01",
-          clientRef: "REF001",
-          raisonSociale: "boushaba",
-          mission: "Mission 2",
-          selected: false,
-          status: "En attente facturation",
-        }, {
-          id: 4,
-          date: "2023-02-02",
-          invoiceNumber: "INVv01",
-          clientRef: "REF001",
-          raisonSociale: "boushaba",
-          mission: "Mission 2",
-          selected: false,
-          status: "En attente facturation",
-        }, {
-          id: 5,
-          date: "2023-02-02",
-          invoiceNumber: "INVv01",
-          clientRef: "REF001",
-          raisonSociale: "boushaba",
-          mission: "Mission 2",
-          selected: false,
-          status: "En attente facturation",
-        },
-         {
-          id: 6,
-          date: "2023-02-02",
-          invoiceNumber: "INVv01",
-          clientRef: "REF001",
-          raisonSociale: "boushaba",
-          mission: "Mission 2",
-          selected: false,
-          status: "En attente facturation",
-        },
-      ],
+    invoices: [
+  {
+    id: 1,
+    date: "2023-01-01",
+    invoiceNumber: "INvv001",
+    clientRef: "REF001",
+    raisonSociale: "soufiane ",
+    mission: "Mission 1",
+    selected: false,
+    status: "Encaissée",
+  },
+  {
+    id: 2,
+    date: "2023-02-02",
+    invoiceNumber: "INvv002",
+    clientRef: "REF002",
+    raisonSociale: "soufiane ",
+    mission: "Mission 2",
+    selected: false,
+    status: "Encaissée",
+  },
+  {
+    id: 3,
+    date: "2023-03-03",
+    invoiceNumber: "INvv003",
+    clientRef: "REF003",
+    raisonSociale: "soufiane ",
+    mission: "Mission 3",
+    selected: false,
+    status: "Encaissée",
+  },
+  {
+    id: 4,
+    date: "2023-04-04",
+    invoiceNumber: "INvv004",
+    clientRef: "REF004",
+    raisonSociale: "soufiane ",
+    mission: "Mission 4",
+    selected: false,
+    status: "Encaissée",
+  },
+  {
+    id: 5,
+    date: "2023-05-05",
+    invoiceNumber: "INvv005",
+    clientRef: "REF005",
+    raisonSociale: "soufiane ",
+    mission: "Mission 5",
+    selected: false,
+    status: "Encaissée",
+  },
+  {
+    id: 6,
+    date: "2023-06-06",
+    invoiceNumber: "INvv006",
+    clientRef: "REF006",
+    raisonSociale: "soufiane ",
+    mission: "Mission 6",
+    selected: false,
+    status: "Encaissée",
+  },
+],
+
       searchQuery: "",
       entriesToShow: 5,
       currentPage: 1,
@@ -165,14 +162,13 @@ export default {
         this.currentPage++;
       }
     },
-   
   },
 };
 </script>
 
 <style scoped>
-.containerr{
-  max-width:95%;
+.containerr {
+  max-width: 95%;
 }
 table tr {
   border-bottom: 1px solid #e2e8f0;
