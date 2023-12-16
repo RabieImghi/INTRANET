@@ -287,7 +287,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 flex" v-if="selectedInterlocuteur !== ''">
+      <div class="mb-4 flex" v-if="selectedInterlocuteur !== '' && selectedClient !== ''">
         <!-- Nom -->
         <div class="w-1/2 mr-2 relative z-0 group">
           <div class="relative">
@@ -335,7 +335,7 @@
         </div>
       </div>
       <!-- E-mail -->
-      <div class="mb-4 flex" v-if="selectedInterlocuteur !== ''">
+      <div class="mb-4 flex" v-if="selectedInterlocuteur !== '' && selectedClient !== ''">
         <div class="w-1/2 mr-2 relative z-0 group">
           <div class="relative">
             <input
@@ -381,7 +381,7 @@
           </div>
         </div>
       </div>
-      <div class="mb-4 flex" v-if="selectedInterlocuteur !== ''">
+      <div class="mb-4 flex" v-if="selectedInterlocuteur !== '' && selectedClient !== ''">
         <!-- Téléphone -->
         <div class="w-1/2 mr-2 relative z-0 group">
           <div class="relative">
@@ -405,7 +405,7 @@
           </div>
         </div>
       </div>
-      <div v-if="selectedInterlocuteur !== ''">
+      <div v-if="selectedInterlocuteur !== '' && selectedClient !== ''">
         <h2 class="text-xl font-semibold mt-12 mb-12">
           Étape 3: Sélectionner une mission
         </h2>
