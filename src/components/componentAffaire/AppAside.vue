@@ -8,32 +8,32 @@
       <ul>
        <li>
           <router-link to="ajouterClient">
-            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '90px'">Ajouter Client</span>
+            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '80px'">Ajouter Client</span>
           </router-link>
         </li>
         <li>
           <router-link to="client">
-            <font-awesome-icon :icon="['fas', 'user']" /> <span v-if="asideWidth !== '90px'">Client</span>
+            <font-awesome-icon :icon="['fas', 'user']" /> <span v-if="asideWidth !== '80px'">Client</span>
           </router-link>
         </li>
           <li>
           <router-link to="ajouterInterlocuteur">
-            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '90px'">Ajouter Interlocuteur</span>
+            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '80px'">Ajouter Interlocuteur</span>
           </router-link>
         </li>
         <li>
           <router-link to="interlocuteur">
-            <font-awesome-icon :icon="['fas', 'users-line']" /> <span v-if="asideWidth !== '90px'">Interlocuteur</span>
+            <font-awesome-icon :icon="['fas', 'users-line']" /> <span v-if="asideWidth !== '80px'">Interlocuteur</span>
           </router-link>
         </li>
           <li>
           <router-link to="ajouterOffres">
-            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '90px'">Ajouter Offres</span>
+            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '80px'">Ajouter Offres</span>
           </router-link>
         </li>
         <li>
           <router-link to="offresCommerciales">
-            <font-awesome-icon :icon="['fas', 'briefcase']" /> <span v-if="asideWidth !== '90px'">Offres Commerciales</span>
+            <font-awesome-icon :icon="['fas', 'briefcase']" /> <span v-if="asideWidth !== '80px'">Offres Commerciales</span>
           </router-link>
         </li>
        
@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     toggleAsideWidth() {
-      this.asideWidth = this.asideWidth === '250px' ? '90px' : '250px';
+      this.asideWidth = this.asideWidth === '250px' ? '80px' : '250px';
     },
   },
 };
@@ -64,7 +64,14 @@ export default {
   background-color: #2d3748;
   color: #e2e8f0;
   padding: 20px;
-  height: 89vh;
+  position: fixed;
+  height: 100vh; 
+  overflow-y: auto;
+ 
+  left: 0;
+  width: 20%;
+  padding-right: 10px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;

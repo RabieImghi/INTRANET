@@ -11,8 +11,9 @@ import AppOfferCommercial from './components/componentAffaire/AppOfferCommercial
 import AppFacture from './views/AppFacture.vue';
 import AppAttentFacture from './components/componentFacturation/AppAttentFacture.vue';
 import AppEmiseFacture from './components/componentFacturation/AppEmiseFacture.vue';
-import ajouterClient from './components/componentAffaire/AppAddClient.vue'
-import ajouterInterlocuteur from './components/componentAffaire/AppAddInterlocuteur.vue'
+import ajouterClient from './components/componentAffaire/AppAddClient.vue';
+import ajouterInterlocuteur from './components/componentAffaire/AppAddInterlocuteur.vue';
+import AppAddOffer from './components/componentAffaire/AppAddOffer.vue';
 
 import { createRouter, createWebHistory } from 'vue-router';
 import AppAgenda from './components/componentAgenda/AppAgenda.vue';
@@ -30,9 +31,9 @@ const routes = [
     children: [
       { path: 'ajouterClient', component: ajouterClient },
       { path: 'client', component: AppClient },
-
       { path: 'ajouterInterlocuteur', component: ajouterInterlocuteur },
       { path: 'interlocuteur', component: AppInterlocuteur },
+      { path: 'ajouterOffres', component: AppAddOffer },
       { path: 'offresCommerciales', component: AppOfferCommercial },
     ],
   },
