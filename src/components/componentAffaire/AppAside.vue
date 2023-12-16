@@ -7,33 +7,33 @@
       </div>
       <ul>
        <li>
-          <router-link to="ajouterClient">
-            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '90px'">Ajouter Client</span>
+          <router-link to="ajouterClient" exact active-class="active-link">
+            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '70px'">Ajouter Client</span>
           </router-link>
         </li>
         <li>
-          <router-link to="client">
-            <font-awesome-icon :icon="['fas', 'user']" /> <span v-if="asideWidth !== '90px'">Client</span>
+          <router-link exact active-class="active-link" to="client">
+            <font-awesome-icon :icon="['fas', 'user']" /> <span v-if="asideWidth !== '70px'">Client</span>
           </router-link>
         </li>
           <li>
-          <router-link to="ajouterInterlocuteur">
-            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '90px'">Ajouter Interlocuteur</span>
+          <router-link exact active-class="active-link" to="ajouterInterlocuteur">
+            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '70px'">Ajouter Interlocuteur</span>
           </router-link>
         </li>
         <li>
-          <router-link to="interlocuteur">
-            <font-awesome-icon :icon="['fas', 'users-line']" /> <span v-if="asideWidth !== '90px'">Interlocuteur</span>
+          <router-link exact active-class="active-link" to="interlocuteur">
+            <font-awesome-icon :icon="['fas', 'users-line']" /> <span v-if="asideWidth !== '70px'">Interlocuteur</span>
           </router-link>
         </li>
           <li>
-          <router-link to="ajouterOffres">
-            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '90px'">Ajouter Offres</span>
+          <router-link exact active-class="active-link" to="ajouterOffres">
+            <font-awesome-icon :icon="['fas', 'plus']" /> <span v-if="asideWidth !== '70px'">Ajouter Offres</span>
           </router-link>
         </li>
         <li>
-          <router-link to="offresCommerciales">
-            <font-awesome-icon :icon="['fas', 'briefcase']" /> <span v-if="asideWidth !== '90px'">Offres Commerciales</span>
+          <router-link exact active-class="active-link" to="offresCommerciales">
+            <font-awesome-icon :icon="['fas', 'briefcase']" /> <span v-if="asideWidth !== '70px'">Offres Commerciales</span>
           </router-link>
         </li>
        
@@ -53,7 +53,8 @@ export default {
   },
   methods: {
     toggleAsideWidth() {
-      this.asideWidth = this.asideWidth === '250px' ? '90px' : '250px';
+       this.asideWidth = this.asideWidth === '250px' ? '70px' : '250px';
+    this.$emit('asideToggled', this.asideWidth === '70px');
     },
   },
 };
@@ -64,7 +65,14 @@ export default {
   background-color: #2d3748;
   color: #e2e8f0;
   padding: 20px;
-  height: 89vh;
+  position: fixed;
+  height: 100vh; 
+  overflow-y: auto;
+ 
+  left: 0;
+
+  padding-right: 10px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -90,10 +98,15 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+.active-link {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
 li {
   margin-bottom: 15px;
-  padding: 5px;
+ 
   border-radius: 5px;
   transition: 0.3s ease;
 }

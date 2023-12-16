@@ -9,10 +9,14 @@ import AppClient from './components/componentAffaire/AppClient.vue';
 import AppInterlocuteur from './components/componentAffaire/AppInterlocuteur.vue';
 import AppOfferCommercial from './components/componentAffaire/AppOfferCommercial.vue';
 import AppFacture from './views/AppFacture.vue';
+
 import AppAttentFacture from './components/componentFacturation/AppAttentFacture.vue';
 import AppEmiseFacture from './components/componentFacturation/AppEmiseFacture.vue';
-import ajouterClient from './components/componentAffaire/AppAddClient.vue'
-import ajouterInterlocuteur from './components/componentAffaire/AppAddInterlocuteur.vue'
+import AppFactureEncaiss from './components/componentFacturation/AppFactureEncaiss.vue';
+
+import ajouterClient from './components/componentAffaire/AppAddClient.vue';
+import ajouterInterlocuteur from './components/componentAffaire/AppAddInterlocuteur.vue';
+import AppAddOffer from './components/componentAffaire/AppAddOffer.vue';
 
 import { createRouter, createWebHistory } from 'vue-router';
 import AppAgenda from './components/componentAgenda/AppAgenda.vue';
@@ -36,19 +40,20 @@ const routes = [
     children: [
       { path: 'ajouterClient', component: ajouterClient },
       { path: 'client', component: AppClient },
-
       { path: 'ajouterInterlocuteur', component: ajouterInterlocuteur },
       { path: 'interlocuteur', component: AppInterlocuteur },
+      { path: 'ajouterOffres', component: AppAddOffer },
       { path: 'offresCommerciales', component: AppOfferCommercial },
     ],
   },
   {
-    path: '/comptabilitéFacturation',
+    path: '/comptabilitFacturation',
     component: AppFacture,
     children: [
       { path: 'EnAttenteFActuration', component: AppAttentFacture },
       { path: 'EmiseFacture', component: AppEmiseFacture },
-    
+      { path: 'FactureEncaissee', component: AppFactureEncaiss },
+      
     ],
   },
   { path: '/GestionCalendrier', component: AppGestionCalendrier },
