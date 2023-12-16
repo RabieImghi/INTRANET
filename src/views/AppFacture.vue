@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <div class="w-1/5">
+    <div class=" appside w-1/5">
       <AppAside />
     </div>
 
@@ -26,6 +26,19 @@ export default {
 body{
   background:gray;
   padding-right:10px;
+}
+.content{
+  flex:shrink;
+}
+.appside {
+  position: fixed;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if the content is taller than the viewport */
+  top: 0;
+  left: 0;
+  width: 20%; /* Adjust the width as needed */
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 
 </style>
