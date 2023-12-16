@@ -6,13 +6,13 @@
 
     <div class="content mt-6 w-4/5">
     
-      <router-view />
+       <router-view />
     </div>
   </div>
 </template>
 
 <script>
-import AppAside from '../components/componentAffaire/AppAside.vue';
+import AppAside from '../components/componentFacturation/AppAside.vue';
 
 export default {
   components: {

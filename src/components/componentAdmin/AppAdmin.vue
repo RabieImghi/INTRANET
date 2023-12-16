@@ -10,14 +10,14 @@
         </div>
       </div>
     </a>
-
+   <router-link to="comptabilitéFacturation/EnAttenteFActuration">
       <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/Comptabilité Facturation.jpg" alt="Image 2" class="w-full h-full object-cover absolute inset-0 z-10">
         <div class="overlay-content p-4 text-center relative z-20">
           <h3 class="mt-2 text-lg text-slate-100 font-extrabold">Comptabilité Facturation</h3>
         </div>
       </div>
-
+   </router-link>
       <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/gestion RH.jpg" alt="Image 3" class="w-full h-full object-cover absolute inset-0 z-10">
         <div class="overlay-content p-4 text-center relative z-20">
