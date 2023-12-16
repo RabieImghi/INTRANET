@@ -29,6 +29,7 @@
     </div>
 
     <div class="flex mt-4">
+
       <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/Gestion de Frais.jpg" alt="Image 4" class="w-full h-full object-cover absolute inset-0 z-10">
         <div class="overlay-content p-4 text-center relative z-20">
@@ -36,14 +37,18 @@
         </div>
       </div>
 
-      <a href="/GestionCalendrier">
-        <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
-          <img src="@/assets/Gestion Calendrier.jpg" alt="Image 5" class="w-full h-full object-cover absolute inset-0 z-10">
-          <div class="overlay-content p-4 text-center relative z-20">
-            <h3 class="mt-2 text-lg text-slate-100 font-extrabold">Gestion Calendrier</h3>
-          </div>
-        </div>
-      </a>
+   <a href="/GestionCalendrier">
+  <div class="parent overlay1 hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
+    <img src="@/assets/Gestion Calendrier.jpg" alt="Image 5" class="w-full h-full object-cover absolute inset-0 z-10">
+    <div class="overlay-content p-4 text-center relative z-20">
+      <h3 class="mt-2 text-lg text-slate-100 font-extrabold">Gestion Calendrier</h3>
+    </div>
+  </div>
+</a>
+
+       
+    <a href="GestionFournisseurs/listFournisseurs">
+    
 
       <div class="parent overlay hover-zoom mx-4 relative w-96 h-64 flex flex-col justify-center items-center">
         <img src="@/assets/Gestion Fournisseurs.jpg" alt="Image 6" class="w-full h-full object-cover absolute inset-0 z-10">
@@ -51,6 +56,7 @@
           <h3 class="mt-2 text-lg text-slate-100 font-extrabold">Gestion Fournisseurs</h3>
         </div>
       </div>
+    </a>  
     </div>
   </div>
 </template>
