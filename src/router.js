@@ -20,6 +20,8 @@ import AppAddOffer from './components/componentAffaire/AppAddOffer.vue';
 
 import { createRouter, createWebHistory } from 'vue-router';
 import AppAgenda from './components/componentAgenda/AppAgenda.vue';
+import AppContact from './components/componentContact/AppContact.vue';
+import AppDemandAbs from './components/componentDemandAbcense/AppDemandAbcense.vue';
 
 import AppFournisour from './views/AppFournisseur.vue';
 import AppFourniseur from './components/componentFournisseur/AppAppFourniseur.vue';
@@ -29,6 +31,8 @@ import AppSoustraitances from './components/componentFournisseur/AppSous-traitan
 import AppFourniseurInterlocuteur from './components/componentFournisseur/AppInterlocuteur.vue';
 import AppInterlocuteurs from './components/componentFournisseur/AppListInterlocuteurs.vue';
 import AppChargeExploitation from './components/componentFournisseur/AppAddChargeExploitation.vue';
+import AppGestionCalendrier from './components/componentGestionCalendrier/AppGestionCalendrier.vue';
+
 const routes = [
   { path: '/', component: AppInterface },
   { path: '/Administrativ', component: AppAdmin },
@@ -36,6 +40,9 @@ const routes = [
   { path: '/Technique', component: AppTech },
   { path: '/Quality', component: AppQuality },
   { path: '/Agenda', component: AppAgenda },
+  { path: '/Contact', component: AppContact },
+  { path: '/DemandAbs', component: AppDemandAbs },
+  
   {
     path: '/GestionDesAffaire',
     component: AppGestionAffaire,
@@ -72,6 +79,7 @@ const routes = [
       
     ],
   },
+  { path: '/GestionCalendrier', component: AppGestionCalendrier },
   
 ];
 
