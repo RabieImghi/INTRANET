@@ -15,7 +15,7 @@
         </li>
         <li>
           <router-link exact active-class="active-link" to="EmiseFacture">
-            <font-awesome-icon :icon="['fas', 'file']" /> <span v-if="asideWidth !== '70px'">Facture Emise</span>
+           <font-awesome-icon :icon="['fas', 'file-export']" /> <span v-if="asideWidth !== '70px'">Facture Emise</span>
           </router-link>
         </li>
           <li>
