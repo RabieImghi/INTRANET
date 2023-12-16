@@ -23,7 +23,16 @@ import AppAgenda from './components/componentAgenda/AppAgenda.vue';
 import AppContact from './components/componentContact/AppContact.vue';
 import AppDemandAbs from './components/componentDemandAbcense/AppDemandAbcense.vue';
 
+import AppFournisour from './views/AppFournisseur.vue';
+import AppFourniseur from './components/componentFournisseur/AppAppFourniseur.vue';
+import AppAddFournisseour from './components/componentFournisseur/AppAddFournisseour.vue';
+import AppAddsouTraitance from './components/componentFournisseur/AppAddsouTraitance.vue';
+import AppSoustraitances from './components/componentFournisseur/AppSous-traitances.vue'
+import AppFourniseurInterlocuteur from './components/componentFournisseur/AppInterlocuteur.vue';
+import AppInterlocuteurs from './components/componentFournisseur/AppListInterlocuteurs.vue';
+import AppChargeExploitation from './components/componentFournisseur/AppAddChargeExploitation.vue';
 import AppGestionCalendrier from './components/componentGestionCalendrier/AppGestionCalendrier.vue';
+
 const routes = [
   { path: '/', component: AppInterface },
   { path: '/Administrativ', component: AppAdmin },
@@ -53,6 +62,20 @@ const routes = [
       { path: 'EnAttenteFActuration', component: AppAttentFacture },
       { path: 'EmiseFacture', component: AppEmiseFacture },
       { path: 'FactureEncaissee', component: AppFactureEncaiss },
+      
+    ],
+  },
+  {
+    path: '/GestionFournisseurs',
+    component: AppFournisour,
+    children: [
+      { path: 'ajouterFournisseurs', component: AppAddFournisseour },
+      { path: 'listFournisseurs', component: AppFourniseur },
+      { path: 'ajoutersoustraitance', component: AppAddsouTraitance },
+      { path: 'soustraitance', component: AppSoustraitances },
+      { path: 'ajouterInterlocuteur', component: AppFourniseurInterlocuteur },
+      { path: 'Interlocuteurs', component: AppInterlocuteurs },
+      { path: 'ChargeExploitation', component: AppChargeExploitation },
       
     ],
   },
