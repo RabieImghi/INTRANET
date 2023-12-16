@@ -38,7 +38,7 @@ const routes = [
     ],
   },
   {
-    path: '/comptabilitéFacturation',
+    path: '/comptabilitFacturation',
     component: AppFacture,
     children: [
       { path: 'EnAttenteFActuration', component: AppAttentFacture },
