@@ -20,7 +20,10 @@ import AppAddOffer from './components/componentAffaire/AppAddOffer.vue';
 
 import { createRouter, createWebHistory } from 'vue-router';
 import AppAgenda from './components/componentAgenda/AppAgenda.vue';
+import AppContact from './components/componentContact/AppContact.vue';
+import AppDemandAbs from './components/componentDemandAbcense/AppDemandAbcense.vue';
 
+import AppGestionCalendrier from './components/componentGestionCalendrier/AppGestionCalendrier.vue';
 const routes = [
   { path: '/', component: AppInterface },
   { path: '/Administrativ', component: AppAdmin },
@@ -28,6 +31,9 @@ const routes = [
   { path: '/Technique', component: AppTech },
   { path: '/Quality', component: AppQuality },
   { path: '/Agenda', component: AppAgenda },
+  { path: '/Contact', component: AppContact },
+  { path: '/DemandAbs', component: AppDemandAbs },
+  
   {
     path: '/GestionDesAffaire',
     component: AppGestionAffaire,
@@ -50,6 +56,7 @@ const routes = [
       
     ],
   },
+  { path: '/GestionCalendrier', component: AppGestionCalendrier },
   
 ];
 
