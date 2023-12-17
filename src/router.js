@@ -23,6 +23,11 @@ import AppAgenda from './components/componentAgenda/AppAgenda.vue';
 import AppContact from './components/componentContact/AppContact.vue';
 import AppDemandAbs from './components/componentDemandAbcense/AppDemandAbcense.vue';
 
+
+import GestionRh from './views/AppGestionRh.vue';
+import AppDemandeAbsence from './components/componentGestionRh/AppDemandeAbsence.vue';
+import AppListeDemandeAbsence from './components/componentGestionRh/ListeDemandeAbsence.vue';
+
 import AppFournisour from './views/AppFournisseur.vue';
 import AppFourniseur from './components/componentFournisseur/AppAppFourniseur.vue';
 import AppAddFournisseour from './components/componentFournisseur/AppAddFournisseour.vue';
@@ -31,6 +36,7 @@ import AppSoustraitances from './components/componentFournisseur/AppSous-traitan
 import AppFourniseurInterlocuteur from './components/componentFournisseur/AppInterlocuteur.vue';
 import AppInterlocuteurs from './components/componentFournisseur/AppListInterlocuteurs.vue';
 import AppChargeExploitation from './components/componentFournisseur/AppAddChargeExploitation.vue';
+
 import AppGestionCalendrier from './components/componentGestionCalendrier/AppGestionCalendrier.vue';
 
 const routes = [
@@ -80,7 +86,15 @@ const routes = [
     ],
   },
   { path: '/GestionCalendrier', component: AppGestionCalendrier },
-  
+  {
+    path: '/GestionRh',
+    component: GestionRh,
+    children: [
+      { path: 'DemandeAbsence', component: AppDemandeAbsence },
+      { path: 'ListeDemandeAbsence', component: AppListeDemandeAbsence },
+
+    ],
+  },
 ];
 
 
