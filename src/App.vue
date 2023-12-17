@@ -1,5 +1,7 @@
 <template>
+
   <div >
+
     <header class="flex items-center justify-between p-4 px-8 text-dark bg-white shadow-md">
       <div class="flex items-center">
         <router-link to="/"><img src="@/assets/logo.png" alt="Logo" class="w-24 h-12 mr-2"></router-link>
@@ -71,6 +73,7 @@ export default {
       matricule: "ABC123",
       currentTime: "",
     };
+
   },
   methods: {
     toggleDropdown() {
