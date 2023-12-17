@@ -1,5 +1,5 @@
 <template>
-  <div @click="handleClickOutside">
+  <div >
     <header class="flex items-center justify-between p-4 px-8 text-dark bg-white shadow-md">
       <div class="flex items-center">
         <router-link to="/"><img src="@/assets/logo.png" alt="Logo" class="w-24 h-12 mr-2"></router-link>
@@ -80,25 +80,8 @@ export default {
       
     },
    
-     handleClickOutside(event) {
-      const dropdown = this.$refs.userDropdown;
-      const dropdownButton = this.$refs.userDropdownBtn;
-
-      if (dropdown && dropdownButton) {
-        if (!dropdown.contains(event.target) && !dropdownButton.contains(event.target)) {
-          this.isDropdownOpen = false;
-        }
-      }
-    },
-  },
-
-  mounted() {
-    document.addEventListener("click", this.handleClickOutside);
-  },
-
-   beforeUnmount() {
-    document.removeEventListener("click", this.handleClickOutside);
-  },
+  }
+    
 };
 </script>
 
